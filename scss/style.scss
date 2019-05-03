@@ -501,7 +501,7 @@ footer {
     .menuToggler {
       position: absolute;
       width: 50vw;
-      height: 40vh;
+      height: 50vh;
       background-color: #fff;
       top: 100%;
       right: 0%;
@@ -637,5 +637,28 @@ footer {
 
   .menuToggler {
     width: 80vw !important;
+  }
+}
+
+
+/* PORTRAIT MODE */
+@media (max-height: 500px) {
+  .menuToggler {
+    width: 90vw !important;
+    max-height: 100px;
+
+    ul {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+    }
+
+    li {
+      display: inline-block !important;
+      margin: 0 auto !important;
+    }
+
+    a {
+      font-size: 1em !important;
+    }
   }
 }

@@ -423,7 +423,7 @@ footer {
   .mainNav .menuToggler {
     position: absolute;
     width: 50vw;
-    height: 40vh;
+    height: 50vh;
     background-color: #fff;
     top: 100%;
     right: 0%;
@@ -507,3 +507,21 @@ footer {
     font-size: 2em; }
   .menuToggler {
     width: 80vw !important; } }
+
+/* PORTRAIT MODE */
+@media (max-height: 500px) {
+  .menuToggler {
+    width: 90vw !important;
+    max-height: 100px; }
+    .menuToggler ul {
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      flex-direction: row !important;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+    .menuToggler li {
+      display: inline-block !important;
+      margin: 0 auto !important; }
+    .menuToggler a {
+      font-size: 1em !important; } }
